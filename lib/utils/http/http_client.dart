@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-class AppHttpHelper {
+class EssileHttpHelper {
   static const String _baseUrl = 'https://_____________.com'; // API base Url
 
   // GET Request
