@@ -1,3 +1,5 @@
+import 'package:essile/features/authentication/screens/onboarding/onboarding.dart';
+import 'package:essile/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -9,7 +11,10 @@ class EssileApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: '',
-      home: Placeholder(),
+      theme: EssileTheme.lightTheme,
+      themeMode: ThemeMode.system,
+      darkTheme: EssileTheme.darkTheme,
+      home: const OnBoardingScreen(),
     );
   }
 }
